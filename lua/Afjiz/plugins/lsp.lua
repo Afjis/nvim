@@ -1,3 +1,4 @@
+-- Right now doesn't do any debugging or formatting. Just lsp server works.
 return {
     "neovim/nvim-lspconfig",
     dependencies = {

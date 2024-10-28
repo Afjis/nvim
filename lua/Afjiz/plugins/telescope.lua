@@ -12,8 +12,8 @@ return {
 
         local builtin = require('telescope.builtin')
         vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
-        vim.keymap.set('n', '<C-p>', builtin.git_files, {})
-        vim.keymap.set('n', '<leader>pws', function()
+        vim.keymap.set('n', '<C-p>', builtin.git_files, {}) -- Only works if it's in a git repository file.
+        vim.keymap.set('n', '<leader>pws', function() -- I think this needs ripgrep in order to work.
             local word = vim.fn.expand("<cword>")
             builtin.grep_string({ search = word })
         end)
