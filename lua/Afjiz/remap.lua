@@ -17,3 +17,11 @@ vim.keymap.set("n", "<leader>l", '<C-w>l')
 -- open terminal split (close by doing two ctrl + \, ctrl + n)
 vim.keymap.set("n", "<leader>tv", ':lcd %:p:h<CR>:vs<CR><C-w><C-w>:set nonu<CR>:te<CR>i')
 vim.keymap.set("n", "<leader>th", ':lcd %:p:h<CR>:sp<CR><C-w><C-w>:set nonu<CR>:te<CR>i')
+
+-- switch between open tabs
+vim.keymap.set({"n", "v"}, "<leader>ne", ':tabn<CR>')
+vim.keymap.set({"n", "v"}, "<leader>pr", ':tabp<CR>')
+
+-- open netrw in a split
+vim.keymap.set({"n", "v"}, "<leader>hs", ':Hex<CR>')
+vim.keymap.set({"n", "v"}, "<leader>vs", ':Vex<CR>')
